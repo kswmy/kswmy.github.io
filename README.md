@@ -1,2 +1,0 @@
-# kswmy.github.io
-Blog
