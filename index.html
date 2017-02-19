@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			for (var i=1; i<5; ++i)
+				{
+					$("body").load("'.i.'",function(responceTxt,statusTXt,xhr)
+					{
+						if (statusTXt=="success")
+							alert("yes");
+						else
+							alert("Error: "+xhr.status+": "+xhr.statusText);
+					});
+					
+				}
+		});
+	</script>
+
+	<title>Blog</title>
+
+	<style type="text/css">
+	</style>
+</head>
+
+<body>
+</body>
+
+</html>
